@@ -41,11 +41,11 @@ COPY apache2.conf /etc/apache2/apache2.conf
 
 ENV PHP_EXTRA_BUILD_DEPS apache2-dev
 ENV PHP_EXTRA_CONFIGURE_ARGS --with-apxs2
-ENV GPG_KEYS 1A4E8B7277C42E53DBA9C7B9BCAA30EA9C0D5763 6E4F6AB321FDC07F2C332E3AC2BF0BC433CFC8B3
+ENV GPG_KEYS A917B1ECDA84AEC2B568FED6F50ABC807BD5DCD0 528995BFEDFBA7191D46839EF9BA0ADA31CBD89E 1729F83938DA44E27BA0F4D3DBDB397470D12172
 
-ENV PHP_VERSION 7.0.28
-ENV PHP_URL="https://secure.php.net/get/php-7.0.28.tar.xz/from/this/mirror" PHP_ASC_URL="https://secure.php.net/get/php-7.0.28.tar.xz.asc/from/this/mirror"
-ENV PHP_SHA256="e738ffce2c30bc0e84be9446af86bef0a0607d321f1a3d04bbfe2402fb5f6de0" PHP_MD5=""
+ENV PHP_VERSION 7.1.15
+ENV PHP_URL="https://secure.php.net/get/php-7.1.15.tar.xz/from/this/mirror" PHP_ASC_URL="https://secure.php.net/get/php-7.1.15.tar.xz.asc/from/this/mirror"
+ENV PHP_SHA256="0e17192fb43532e4ebaa190ecec9c7e59deea7dadb7dab67b19c2081a68bd817" PHP_MD5=""
 
 
 RUN set -xe \
